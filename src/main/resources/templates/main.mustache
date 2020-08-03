@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<body bgcolor="#c0c0c0">
+
+<title>Резюме Шабанов В.Е.</title>
+<style>
+   h1 {
+    margin-bottom: -25px;
+   }
+ </style>
+<h1><b>Шабанов</b></h1>
+<p><h1><b>Валентин Евгеньевич</b></h1></p>
+
+<br><strong>Контакты</strong>
+<i>
+    <br>+7 (913) 763-24-84
+    <br>valentinshabanov95@gmail.com
+</i>
+<hr>
+
+<br><strong>Основной стек навыков/умений</strong>
+<ul>
+    <li>C, C++, Java</li>
+    <li>Groovy, Kotlin</li>
+    <li>Gradle, Maven</li>
+    <li>JUnit 4, Mockito</li>
+    <li>SQL, mySQL</li>
+    <li>HTML</li>
+    <li>Git, Locman:PLM-аскон</li>
+</ul>
+
+<br><strong>Навыки пользования программами</strong>
+<ul>
+    <li>Visual Studio, VS Code</li>
+    <li>IntelliJ IDEA</li>
+    <li>MS Word и MS Excel</li>
+</ul>
+
+<br><strong>Дополнительные качества, которые могу выделить</strong>
+<ul>
+    <li>Знание принципов ООП и САПР</li>
+    <li> Способен разобраться в чужом коде</li>
+    <li>Обладаю быстрой обучаемостью, внимательностью к деталям, пунктуальностью</li>
+    <li>Умею работать в команде</li>
+    <li>Английский - средний уровень</li>
+    <li>Не курю, вредных привычек не имею</li>
+</ul>
+<hr>
+<div>
+    <form method="post">
+        <b><input type="text" name="text" placeholder="Введите сообщение" /></b>
+        <input type="text" name="tag" placeholder="Тэг" />
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+
+<div>Список сообщений</div>
+{{#messages}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{text}}</span>
+        <i>{{tag}}</i>
+    </div>
+{{/messages}}
+</body>
+
+
+</html>
