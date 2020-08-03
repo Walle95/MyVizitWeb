@@ -46,13 +46,21 @@
     <li>Не курю, вредных привычек не имею</li>
 </ul>
 <hr>
+<p>
+<i><br><strong>Заметки по резюме</strong></i>
+</p>
 <div>
     <form method="post">
-        <b><input type="text" name="text" placeholder="Введите сообщение" /></b>
+        <b><input type="text" name="text" placeholder="Введите заметку" /></b>
         <input type="text" name="tag" placeholder="Тэг" />
-        <button type="submit">Добавить</button>
+        <button type="submit">Добавить заметку</button>
     </form>
 </div>
+<hr>
+<form method="post" action="filter">
+    <input type="text" name="filter" placeholder="Введите Тэг">
+    <button type="submit">Найти заметку</button>
+</form>
 
 <div>Список сообщений</div>
 {{#messages}}
@@ -62,7 +70,7 @@
         <i>{{tag}}</i>
     </div>
 {{/messages}}
+<hr>
 </body>
-
 
 </html>
